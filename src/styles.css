@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+ .margin10 {
+    margin: 10px;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+  }
+  
+  .column3 {
+    float: left;
+    width: 33%;
+  }
+
+  @media (max-width: 600px) {
+    .column2 {
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .column3 {
+      width: 100%;
+    }
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  swiper{
+    height: 300px;
+}

@@ -1,0 +1,155 @@
+<div class="row">
+    <div class="column3">
+        <mat-card class="margin10">
+            <mat-card-content>
+                <p>
+                    Подарите себе, своим друзьям и близким самые незабываемые минуты в Вашей жизни!
+                </p>
+                <p>
+                    Буря впечатлений, Ураган эмоций, Море позитива
+                </p>
+                <p>
+                    и целая куча ярких фотографий на память!
+                </p>
+                <img mat-card-image src="/assets/avatar_small.jpg">
+                <p>
+                    Конный Клуб "СКАЗКА" приглашает Вас на верховые прогулки в Великолепный Петергоф!
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="column3">
+        <mat-card class="margin10">
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>new_releases</mat-icon>
+                </div>
+                <mat-card-title>Новости</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div>
+                    <p>
+                        Весь наш "сказочный" коллектив и все наши волшебные питомцы, выражают искреннюю благодарность и признательность за то, что вы с нами!
+                    </p>
+                    <p>
+                        С радостью сообщаем вам, что МЫ ПЕРЕЕХАЛИ!
+                    </p>
+                    <p>
+                        И не торопитесь расстраиваться, мы по-прежнему находимся в Петергофе, а наши возможности качественно улучшились! 
+                    </p>
+                    <p>
+                        Звоните! И приезжайте! Мы Вас ждем! 
+                    </p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="column3">
+        <mat-card class="margin10">
+            <img mat-card-image src="/assets/avatar.jpg">
+            <mat-card-content>
+                <p>
+                    ЛОШАДЬ, природы созданье чудесное,
+                </p>
+                <p>
+                    С тобой единение чувствую тесное...
+                </p>
+                <p>
+                    Ветру и времени только подвластное,
+                </p>
+                <p>
+                    Вольным рожденное, вечно прекрасное!
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+<div class="row">
+    <div class="column3">
+        <mat-card class="margin10">
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>local_offer</mat-icon>
+                </div>
+                Наши услуги
+            </mat-card-header>
+            <mat-card-content>
+                <swiper [config]="config">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" *ngFor="let service of services">
+                            <mat-toolbar color="accent">
+                                <button mat-button (click)="openDialog(service.id)">{{ service.name }}</button>
+                            </mat-toolbar>
+                            <img mat-card-image [attr.src]="'/assets/' + service.image">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </swiper>
+                <mat-card-actions>
+                    <button mat-button (click)="navigate('services')">ВСЕ УСЛУГИ</button>
+                </mat-card-actions>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="column3">
+        <mat-card class="margin10">
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>book</mat-icon>
+                </div>
+                <mat-card-title>Наши статьи</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <ul>
+                    <li>
+                        <button mat-button (click)="navigate('/articles?tab=0#safety')">
+                            Техника безопасности
+                        </button>
+                    </li>
+                    <li>
+                        <button mat-button (click)="navigate('/articles?tab=0#purpose')">
+                            Зачем все это
+                        </button>
+                    </li>
+                    <li>
+                        <button mat-button (click)="navigate('/articles?tab=1#rope_exersizes')">
+                            Упражнения
+                        </button>
+                    </li>
+                    <li>
+                        <button mat-button (click)="navigate('/articles?tab=2#trainer_tells')">
+                            Говорит тренер
+                        </button>
+                    </li>
+                </ul>
+            </mat-card-content>
+            <mat-card-actions>
+                    <button mat-button (click)="navigate('articles')">ВСЕ СТАТЬИ</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="column3">
+        <mat-card class="margin10">
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>share</mat-icon>
+                </div>
+                <mat-card-title>Мы в социальных сетях</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-menu-item href="https://www.instagram.com/kk_skazka/" target="_blank">
+                    <mat-icon>photo_camera</mat-icon>
+                    INSTAGRAM
+                </a>
+                <a mat-menu-item href="https://vk.com/dl_skazka" target="_blank">
+                    <mat-icon>person</mat-icon>
+                    ВКонтакте
+                </a>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

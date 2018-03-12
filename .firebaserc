@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "skazka": "kk-skazka",
+    "default": "kk-skazka"
+  }
+}

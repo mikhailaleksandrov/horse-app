@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>
+    {{ this.model.name }}
+</h1>
+<div mat-dialog-content style="white-space: pre-wrap;">
+    {{ this.model.description }}
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onOkClick()">Ok</button>
+</div>

@@ -1,0 +1,14 @@
+<div class="row" *ngFor="let pipe of model">
+    <div class="column3" *ngFor="let item of pipe">
+        <mat-card class="margin10">
+            <mat-card-header>
+                    <mat-card-title>{{ item.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ item.price}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [attr.src]="'/assets/' + item.image">
+            <mat-card-content style="white-space: pre-wrap;">
+                {{ item.description }}
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
