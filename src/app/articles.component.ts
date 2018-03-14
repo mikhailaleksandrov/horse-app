@@ -3,7 +3,28 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-articles',
-  templateUrl: './articles.component.html'
+  templateUrl: './articles.component.html',
+  styles: [
+  `.parent {
+      overflow: hidden;
+  }
+  .left {
+      float: left;
+      width: 350px;
+  }
+  .right {
+      overflow: hidden;
+  }
+  
+  @media (max-width: 900px) {
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+    }
+  }`
+  ]
 })
 export class ArticlesComponent implements OnInit {
   public selectedTab: number = 0;

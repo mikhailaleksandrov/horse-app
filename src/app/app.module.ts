@@ -16,8 +16,12 @@ import { GalleryComponent } from './gallery.component';
 
 import { ArticleKushnirPonyComponent } from './articles/articleKushnirPony.component';
 import { ArticleKushnirFailsComponent } from './articles/articleKushnirFails.component';
+import { ArticleKushnirHowToTalkComponent } from './articles/articleKushnirHowToTalk.component';
 import { ArticleQuotesComponent } from './articles/articleQuotes.component';
 import { ArticleExersizesComponent } from './articles/articleExersizes.component';
+import { ArticleWhyComponent } from './articles/articleWhy.component';
+import { ArticleSafetyComponent } from './articles/articleSafety.component';
+import { ArticleBalanceComponent } from './articles/articleBalance.component';
 
 import { ImagesGalleryComponent } from './controls/imagesGallery.component';
 
@@ -34,13 +38,24 @@ import { MatCardModule, MatMenuModule, MatIconModule, MatSnackBarModule, MatList
 import { MatTableModule, MatPaginatorModule, MatSelectModule, MatDialogModule } from '@angular/material';
 import { MatRadioModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 const appRoutes: Routes = [
   { path: 'contacts', component: ContactsComponent },
   { path: 'staff', component: StaffComponent },
   { path: 'services', component: ServicesListComponent },
-  { path: 'articles', component: ArticlesComponent },
+  { path: 'articles', component: ArticlesComponent, children: [
+    { path: '', redirectTo: 'why', pathMatch: 'full' },
+    { path: 'why', component: ArticleWhyComponent },
+    { path: 'exersizes', component: ArticleExersizesComponent },
+    { path: 'safety', component: ArticleSafetyComponent },
+    { path: 'quotes', component: ArticleQuotesComponent },
+    { path: 'balance', component: ArticleBalanceComponent },
+    { path: 'kushnir-pony', component: ArticleKushnirPonyComponent },
+    { path: 'kushnir-fails', component: ArticleKushnirFailsComponent },
+    { path: 'kushnir-how-to-talk', component: ArticleKushnirHowToTalkComponent }
+  ] },
   { path: 'gallery', component: GalleryComponent },
   { path: '', component: DefaultComponent },
   { path: '**', redirectTo: '' }
@@ -60,7 +75,11 @@ const appRoutes: Routes = [
     ArticleKushnirPonyComponent,
     ArticleKushnirFailsComponent,
     ArticleQuotesComponent,
-    ArticleExersizesComponent
+    ArticleExersizesComponent,
+    ArticleWhyComponent,
+    ArticleSafetyComponent,
+    ArticleKushnirHowToTalkComponent,
+    ArticleBalanceComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -72,7 +91,7 @@ const appRoutes: Routes = [
 		MatChipsModule, MatListModule, MatExpansionModule, MatTableModule,
 		MatPaginatorModule, MatSelectModule, MatDialogModule, MatRadioModule,
     MatDatepickerModule, MatNativeDateModule, MatProgressBarModule,
-    MatTabsModule, MatSidenavModule,
+    MatTabsModule, MatSidenavModule, MatGridListModule,
     FlexLayoutModule, SwiperModule
 	],
   providers: [

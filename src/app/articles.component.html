@@ -1,4 +1,87 @@
-<mat-tab-group [selectedIndex]="selectedTab">
+<div class="parent">
+    <div class="left">
+        <mat-accordion style="margin: 5px;">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Начинающим
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list">
+                    <mat-list-item role="listitem">
+                        <a routerLink="/articles/why" class="mat-button">
+                            Пять причин заняться верховой ездой
+                        </a>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <a routerLink="/articles/safety" class="mat-button">
+                            Техника безопасности
+                        </a>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <a routerLink="/articles/balance" class="mat-button">
+                            Равновесие для всадника
+                        </a>
+                    </mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Любителям и профессионалам
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list">
+                    <mat-list-item role="listitem">
+                        <a routerLink="/articles/exersizes" class="mat-button">
+                            Упражнения
+                        </a>
+                    </mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Юмор
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list">
+                    <mat-list-item role="listitem">
+                        <a routerLink="/articles/quotes" class="mat-button">
+                            Говорит тренер
+                        </a>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <div style="margin-left: 15px;">
+                            Истории от <a mat-button color="primary" href="https://vk.com/id2690665" target="_blank">Ольги Кушнир</a>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem" style="margin-left: 15px;">
+                        <a routerLink="/articles/kushnir-pony" class="mat-button">
+                            История о двух пони
+                        </a>
+                    </mat-list-item>
+                    <mat-list-item role="listitem" style="margin-left: 15px;">
+                        <a routerLink="/articles/kushnir-fails" class="mat-button">
+                            Падения с лошадей
+                        </a>
+                    </mat-list-item>
+                    <mat-list-item role="listitem" style="margin-left: 15px;">
+                        <a routerLink="/articles/kushnir-how-to-talk" class="mat-button">
+                            Памятка при общении с лошадью
+                        </a>
+                    </mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+<!-- <mat-tab-group [selectedIndex]="selectedTab" class="margin10">
     <mat-tab label="Начинающим">
         <mat-card class="margin10" id="safety">
             <mat-card-title>
@@ -82,4 +165,4 @@
         <app-kushnir-fails></app-kushnir-fails>
     </mat-tab>
 </mat-tab-group>
-
+ -->
