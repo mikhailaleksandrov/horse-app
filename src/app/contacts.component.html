@@ -7,11 +7,16 @@
                     </div>
                     Наше местоположение
             </mat-card-header>
+            <img mat-card-image src="/assets/map.jpg">
             <mat-card-content>
-                <iframe height="300" width="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOfobiM1GlkYRIYksHk7nfzA&key=AIzaSyCdZpRvnOBnQ8__601gZC13omZIZk-V4S0&language=ru"
-                    allowfullscreen>
-                </iframe>
+                <mat-card-content>
+                    СПБ, Санино, Ленинградская обл., 188501, Петергоф
+                </mat-card-content>
             </mat-card-content>
+            <mat-card-actions>
+                    <a mat-button color="primary" href="https://goo.gl/maps/sw7xKEFTK9t" target="_blank">Google.Maps</a>
+                    <a mat-button color="primary" href="https://yandex.ru/maps/-/CBeLMRVzWA" target="_blank">Yandex.Карты</a>
+            </mat-card-actions>
         </mat-card>
     </div>
     <div class="column2">
@@ -29,32 +34,49 @@
                 8(950)047-01-22
             </p>
         </mat-card>
-        <!-- <mat-card class="margin10">
+        <mat-card class="margin10">
             <mat-card-header>
                     <div mat-card-avatar>
                         <mat-icon>directions_walk</mat-icon>
                     </div>
                     Как добраться
             </mat-card-header>
-            <p>
-                На общественном транспорте:
+            <p class="subheading-1">
+                На автомобиле
+            </p>
+            <mat-list role="list">
+                <mat-list-item role="listitem">
+                    <a mat-button color="primary" href="https://www.google.ru/maps/dir/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3/59.8442337,29.8967814/@59.8332574,29.9051385,4650m/data=!3m1!1e3!4m14!4m13!1m10!1m1!1s0x4696378cc74a65ed:0x6dc7673fab848eff!2m2!1d30.3350986!2d59.9342802!3m4!1m2!1d29.89758!2d59.8442727!3s0x4696409bdd66533f:0x4754dce37016f6a3!1m0!3e0?hl=ru&authuser=0" target="_blank">Из Санкт-Петербурга по южной КАД</a>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                    <a mat-button color="primary" href="https://www.google.ru/maps/dir/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3/59.8442713,29.8968315/@59.8487589,29.9202136,5849m/data=!3m1!1e3!4m21!4m20!1m15!1m1!1s0x4696378cc74a65ed:0x6dc7673fab848eff!2m2!1d30.3350986!2d59.9342802!3m4!1m2!1d29.9616673!2d59.8718221!3s0x469638aed2b5610d:0x452581e73d2be627!3m4!1m2!1d29.8994338!2d59.8439879!3s0x4696409b8993aadf:0xf9e16426dc732351!1m0!2m1!2b1!3e0?hl=ru&authuser=0" target="_blank">Из Санкт-Петребурга вдоль залива</a>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                    <a mat-button color="primary" href="https://www.google.ru/maps/dir/%D0%9A%D1%80%D0%BE%D0%BD%D1%88%D1%82%D0%B0%D0%B4%D1%82,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3/59.8442337,29.8967814/@59.8506833,29.8222169,7010m/data=!3m1!1e3!4m9!4m8!1m5!1m1!1s0x4696454b36f2a757:0x143522ed1efe654b!2m2!1d29.7655453!2d59.9959303!1m0!3e0?hl=ru&authuser=0" target="_blank">Со стороны Ломоносова и Кронштадта</a>
+                </mat-list-item>
+            </mat-list>
+            <p class="subheading-1">
+                На общественном транспорте
             </p>
             <p>
-                • от ст. метро "Автово" - автобус 200 или маршрутка 300 до остановки "посёлок Просвещение" (ориентир - красный кирпичный
-                храм);
+                • от ст.м."Проспект Ветеранов" маршрутка № 639Б, остановка "Бельведер" (перед перекрестком), далее повернуть налево по дороге, спуститься вниз вдоль озера, повернуть опять налево вдоль водного канала, через 250 метров поверните направо, на проселочную дорогу, которая и приведет вас к нам.
+                <a mat-button color="primary" href="https://www.google.ru/maps/dir/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3/%D0%9A%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9+%D0%9A%D0%BB%D1%83%D0%B1+%22%D0%A1%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0%22,+%D0%A1%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE,+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@59.8523455,29.8938117,5836m/data=!3m1!1e3!4m17!4m16!1m5!1m1!1s0x4696378cc74a65ed:0x6dc7673fab848eff!2m2!1d30.3350986!2d59.9342802!1m5!1m1!1s0x469646cd881bfa39:0x307fe74e1e2c8921!2m2!1d29.8912887!2d59.8470329!2m2!2b1!4e3!3e3?hl=ru&authuser=0" target="_blank">Маршрут</a>
             </p>
             <p>
-                • от ст. метро "Проспект Ветеранов" - маршрутка 343 до остановки "посёлок Просвещение" (ориентир - красный кирпичный храм);
+                • к нам также ходит городской автобус №360. 
             </p>
             <p>
-                • из Нового Петергофа - автобус 351 до остановки "угол Собстверного проспекта и Бобыльской дороги"
+                Маршрут: ж/д станция "Новый Петергоф"- Привокзальная площадь - Луизинская улица - Сашинская дорога - улица Братьев Горкушенко - Санинская дорога - Санинское шоссе - Центральная улица - Бабигонская дорога - улица Шахматова (обратно: улица Шахматова - Университетский проспект - Чебышевская улица - Гостилицкое шоссе - Бабигонская дорога).
+            </p> 
+            <p>
+                Выходить можно на остановках №1 - дер.Санино, №2 - Бельведер, в обоих случаях двигаться по дороге в сторону Лугового парка.
             </p>
             <p>
-                • от ж/д станции "Балтийский вокзал" до станции "Старый Петергоф на поездах направления "Калище" и "Ораниенбаум 1";
+                Маршруты из 
+                <a mat-button color="primary" href="https://www.google.ru/maps/dir/%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9+%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B3%D0%BE%D1%84,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3/%D0%9A%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9+%D0%9A%D0%BB%D1%83%D0%B1+%22%D0%A1%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0%22,+%D0%A1%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE,+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@59.856857,29.8710974,3733m/data=!3m1!1e3!4m17!4m16!1m5!1m1!1s0x469640d5e148f163:0x9704da961cc20bff!2m2!1d29.8621051!2d59.87971!1m5!1m1!1s0x469646cd881bfa39:0x307fe74e1e2c8921!2m2!1d29.8912887!2d59.8470329!2m1!2b1!3e3!5i2?hl=ru&authuser=0" target="_blank">Старого Петергофа</a>
+                и
+                <a mat-button color="primary" href="https://www.google.ru/maps/dir/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9+%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B3%D0%BE%D1%84,+%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B3%D0%BE%D1%84,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+198510/%D0%9A%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9+%D0%9A%D0%BB%D1%83%D0%B1+%22%D0%A1%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0%22,+%D0%A1%D0%B0%D0%BD%D0%B8%D0%BD%D0%BE,+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@59.8527968,29.8882991,3681m/data=!3m2!1e3!4b1!4m16!4m15!1m5!1m1!1s0x469640ac19694543:0x4e64ebcda045cbf!2m2!1d29.9251009!2d59.864151!1m5!1m1!1s0x469646cd881bfa39:0x307fe74e1e2c8921!2m2!1d29.8912887!2d59.8470329!2m1!2b1!3e3?hl=ru&authuser=0" target="_blank">Нового Петергофа</a>
             </p>
-            <p>
-                На машине: Собственный проспект, 84
-            </p>
-        </mat-card> -->
+        </mat-card>
     </div>
 </div>
