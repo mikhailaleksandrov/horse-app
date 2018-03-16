@@ -32,4 +32,16 @@
 
   swiper{
     height: 300px;
-}
+  }
+
+  .article-card {
+    float: left;
+    width: 33%;
+  }
+
+  @media (max-width: 600px) {
+    .article-card {
+        width: 100%;
+    }
+  }
+  
