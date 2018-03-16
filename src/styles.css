@@ -45,3 +45,8 @@
     }
   }
   
+  .article-image-container {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+  }

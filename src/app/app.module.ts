@@ -26,6 +26,7 @@ import { ArticleSafetyComponent } from './articles/articleSafety.component';
 import { ArticleBalanceComponent } from './articles/articleBalance.component';
 import { ArticlePessoaComponent } from './articles/articlePessoa.component';
 import { ArticleRemoveTensionComponent } from './articles/articleRemoveTension.component';
+import { ArticleRidingExersizesComponent } from './articles/articleRidingExersizes.component';
 
 import { ImagesGalleryComponent } from './controls/imagesGallery.component';
 
@@ -62,7 +63,8 @@ const appRoutes: Routes = [
     { path: 'kushnir-fears', component: ArticleKushnirFears },
     { path: 'kushnir-diet', component: ArticleKushnirDiet },
     { path: 'pessoa', component: ArticlePessoaComponent },
-    { path: 'remove-tension', component: ArticleRemoveTensionComponent }
+    { path: 'remove-tension', component: ArticleRemoveTensionComponent },
+    { path: 'riding-exersizes', component: ArticleRidingExersizesComponent }
   ] },
   { path: 'gallery', component: GalleryComponent },
   { path: '', component: DefaultComponent },
@@ -91,7 +93,8 @@ const appRoutes: Routes = [
     ArticleKushnirDiet,
     ArticleBalanceComponent,
     ArticlePessoaComponent,
-    ArticleRemoveTensionComponent
+    ArticleRemoveTensionComponent,
+    ArticleRidingExersizesComponent
   ],
   imports: [
     BrowserAnimationsModule,
