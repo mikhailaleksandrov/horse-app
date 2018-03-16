@@ -3,26 +3,26 @@
         <mat-icon>group</mat-icon>КК СКАЗКА</button>
     <span class="fill-remaining-space"></span>
     <div fxLayout="row" fxShow="false" fxShow.gt-sm>
-        <button mat-button routerLink="/staff">
+        <a mat-button routerLink="/staff">
             <mat-icon>whatshot</mat-icon>
             ЛОШАДИ
-        </button>
-        <button mat-button routerLink="/services">
+        </a>
+        <a mat-button routerLink="/services">
             <mat-icon>description</mat-icon>
             УСЛУГИ
-        </button>
-        <button mat-button routerLink="/gallery">
+        </a>
+        <a mat-button routerLink="/gallery">
             <mat-icon>photo_camera</mat-icon>
             ГАЛЕРЕЯ
-        </button>
-        <button mat-button routerLink="/articles">
+        </a>
+        <a mat-button routerLink="/articles">
             <mat-icon>library_books</mat-icon>
             МАТЕРИАЛЫ
-        </button>
-        <button mat-button routerLink="/contacts">
+        </a>
+        <a mat-button routerLink="/contacts">
             <mat-icon>person_pin_circle</mat-icon>
             КОНТАКТЫ
-        </button>
+        </a>
     </div>
     <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
@@ -36,24 +36,24 @@
     <a mat-menu-item href="tel:8-950-047-01-22">8(950)047-01-22</a>
 </mat-menu>
 <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item routerLink="/staff">
+    <a mat-menu-item routerLink="/staff">
         <mat-icon>whatshot</mat-icon>ЛОШАДИ
-    </button>
-    <button mat-menu-item routerLink="/services">
+    </a>
+    <a mat-menu-item routerLink="/services">
         <mat-icon>description</mat-icon>
         УСЛУГИ
-    </button>
-    <button mat-menu-item routerLink="/articles">
+    </a>
+    <a mat-menu-item routerLink="/articles">
         <mat-icon>library_books</mat-icon>
         МАТЕРИАЛЫ
-    </button>
-    <button mat-menu-item routerLink="/gallery">
+    </a>
+    <a mat-menu-item routerLink="/gallery">
         <mat-icon>photo_camera</mat-icon>
         ГАЛЕРЕЯ
-    </button>
-    <button mat-menu-item routerLink="/contacts">
+    </a>
+    <a mat-menu-item routerLink="/contacts">
         <mat-icon>person_pin_circle</mat-icon>
         КОНТАКТЫ
-    </button>
+    </a>
 </mat-menu>
 <router-outlet></router-outlet>

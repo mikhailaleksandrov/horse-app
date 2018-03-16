@@ -17,6 +17,8 @@ import { GalleryComponent } from './gallery.component';
 import { ArticleKushnirPonyComponent } from './articles/articleKushnirPony.component';
 import { ArticleKushnirFailsComponent } from './articles/articleKushnirFails.component';
 import { ArticleKushnirHowToTalkComponent } from './articles/articleKushnirHowToTalk.component';
+import { ArticleKushnirFears }  from './articles/articleKushnirFears.component';
+import { ArticleKushnirDiet } from './articles/articleKushnirDiet.component';
 import { ArticleQuotesComponent } from './articles/articleQuotes.component';
 import { ArticleExersizesComponent } from './articles/articleExersizes.component';
 import { ArticleWhyComponent } from './articles/articleWhy.component';
@@ -54,7 +56,9 @@ const appRoutes: Routes = [
     { path: 'balance', component: ArticleBalanceComponent },
     { path: 'kushnir-pony', component: ArticleKushnirPonyComponent },
     { path: 'kushnir-fails', component: ArticleKushnirFailsComponent },
-    { path: 'kushnir-how-to-talk', component: ArticleKushnirHowToTalkComponent }
+    { path: 'kushnir-how-to-talk', component: ArticleKushnirHowToTalkComponent },
+    { path: 'kushnir-fears', component: ArticleKushnirFears },
+    { path: 'kushnir-diet', component: ArticleKushnirDiet }
   ] },
   { path: 'gallery', component: GalleryComponent },
   { path: '', component: DefaultComponent },
@@ -79,6 +83,8 @@ const appRoutes: Routes = [
     ArticleWhyComponent,
     ArticleSafetyComponent,
     ArticleKushnirHowToTalkComponent,
+    ArticleKushnirFears,
+    ArticleKushnirDiet,
     ArticleBalanceComponent
   ],
   imports: [
