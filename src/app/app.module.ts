@@ -19,6 +19,8 @@ import { ArticleKushnirFailsComponent } from './articles/articleKushnirFails.com
 import { ArticleKushnirHowToTalkComponent } from './articles/articleKushnirHowToTalk.component';
 import { ArticleKushnirFears }  from './articles/articleKushnirFears.component';
 import { ArticleKushnirDiet } from './articles/articleKushnirDiet.component';
+import { ArticleKushnirOwnerComponent } from './articles/articleKushnirOwner.component';
+import { ArticleKushnirSingleFearComponent } from './articles/articleKushnirSingleFear.component';
 import { ArticleQuotesComponent } from './articles/articleQuotes.component';
 import { ArticleExersizesComponent } from './articles/articleExersizes.component';
 import { ArticleWhyComponent } from './articles/articleWhy.component';
@@ -62,6 +64,8 @@ const appRoutes: Routes = [
     { path: 'kushnir-how-to-talk', component: ArticleKushnirHowToTalkComponent },
     { path: 'kushnir-fears', component: ArticleKushnirFears },
     { path: 'kushnir-diet', component: ArticleKushnirDiet },
+    { path: 'kushnir-owner', component: ArticleKushnirOwnerComponent },
+    { path: 'kushnir-single-fear', component: ArticleKushnirSingleFearComponent},
     { path: 'pessoa', component: ArticlePessoaComponent },
     { path: 'remove-tension', component: ArticleRemoveTensionComponent },
     { path: 'riding-exersizes', component: ArticleRidingExersizesComponent }
@@ -91,6 +95,8 @@ const appRoutes: Routes = [
     ArticleKushnirHowToTalkComponent,
     ArticleKushnirFears,
     ArticleKushnirDiet,
+    ArticleKushnirOwnerComponent,
+    ArticleKushnirSingleFearComponent,
     ArticleBalanceComponent,
     ArticlePessoaComponent,
     ArticleRemoveTensionComponent,
