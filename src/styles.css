@@ -1,4 +1,8 @@
- .margin10 {
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.margin10 {
     margin: 10px;
 }
 

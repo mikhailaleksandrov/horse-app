@@ -14,6 +14,13 @@ import { ServicesListComponent } from './servicesList.component';
 import { ArticlesComponent } from './articles.component';
 import { GalleryComponent } from './gallery.component';
 
+import { AllStaffComponent } from './staff/all.component';
+import { PastyComponent } from './staff/pasty.component';
+import { CometComponent } from './staff/comet.component';
+import { BanditComponent } from './staff/bandit.component';
+import { ValensiaComponent } from './staff/valensia.component';
+import { BohemaComponent } from './staff/bohema.component';
+
 import { ArticleKushnirPonyComponent } from './articles/articleKushnirPony.component';
 import { ArticleKushnirFailsComponent } from './articles/articleKushnirFails.component';
 import { ArticleKushnirHowToTalkComponent } from './articles/articleKushnirHowToTalk.component';
@@ -51,7 +58,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 
 const appRoutes: Routes = [
   { path: 'contacts', component: ContactsComponent },
-  { path: 'staff', component: StaffComponent },
+  { path: 'staff', component: StaffComponent , children: [
+    { path: 'pasty', component: PastyComponent },
+    { path: 'comet', component: CometComponent },
+    { path: 'bandit', component: BanditComponent },
+    { path: 'valensia', component: ValensiaComponent },
+    { path: 'bohema', component: BohemaComponent },
+    { path: '', component: AllStaffComponent },
+    { path: '**', redirectTo: '' }
+  ]},
   { path: 'services', component: ServicesListComponent },
   { path: 'articles', component: ArticlesComponent, children: [
     { path: '', redirectTo: 'why', pathMatch: 'full' },
@@ -103,7 +118,13 @@ const appRoutes: Routes = [
     ArticlePessoaComponent,
     ArticleRemoveTensionComponent,
     ArticleRidingExersizesComponent,
-    ArticleImpulseComponent
+    ArticleImpulseComponent,
+    PastyComponent,
+    AllStaffComponent,
+    CometComponent,
+    BanditComponent,
+    ValensiaComponent,
+    BohemaComponent
   ],
   imports: [
     BrowserAnimationsModule,

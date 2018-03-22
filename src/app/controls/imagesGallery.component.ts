@@ -18,7 +18,7 @@ export class ImagesGalleryComponent {
 
     @Input()
     title: string;
-    
+
     public image_index: number = 0;
 
   public get canIncrement() : boolean {
