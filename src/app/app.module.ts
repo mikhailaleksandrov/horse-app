@@ -37,6 +37,7 @@ import { ArticlePessoaComponent } from './articles/articlePessoa.component';
 import { ArticleRemoveTensionComponent } from './articles/articleRemoveTension.component';
 import { ArticleRidingExersizesComponent } from './articles/articleRidingExersizes.component';
 import { ArticleImpulseComponent } from './articles/articleImpulse.component';
+import { ArticleThrowStapelsComponent } from './articles/articleThrowStapels.component';
 
 import { ImagesGalleryComponent } from './controls/imagesGallery.component';
 
@@ -85,7 +86,8 @@ const appRoutes: Routes = [
     { path: 'pessoa', component: ArticlePessoaComponent },
     { path: 'remove-tension', component: ArticleRemoveTensionComponent },
     { path: 'riding-exersizes', component: ArticleRidingExersizesComponent },
-    { path: 'impulse', component: ArticleImpulseComponent }
+    { path: 'impulse', component: ArticleImpulseComponent },
+    { path: 'throw-stapels', component: ArticleThrowStapelsComponent }
   ] },
   { path: 'gallery', component: GalleryComponent },
   { path: '', component: DefaultComponent },
@@ -119,6 +121,7 @@ const appRoutes: Routes = [
     ArticleRemoveTensionComponent,
     ArticleRidingExersizesComponent,
     ArticleImpulseComponent,
+    ArticleThrowStapelsComponent,
     PastyComponent,
     AllStaffComponent,
     CometComponent,
