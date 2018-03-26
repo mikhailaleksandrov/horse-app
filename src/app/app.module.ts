@@ -40,6 +40,7 @@ import { ArticleImpulseComponent } from './articles/articleImpulse.component';
 import { ArticleThrowStapelsComponent } from './articles/articleThrowStapels.component';
 import { ArticleMakeNerviousComponent } from './articles/articleMakeNervious.component';
 import { ArticleGetReinComponent } from './articles/articleGetRein.component';
+import { ArticleHandMistakesComponent } from './articles/articleHandMistakes.component';
 
 import { ImagesGalleryComponent } from './controls/imagesGallery.component';
 
@@ -91,7 +92,8 @@ const appRoutes: Routes = [
     { path: 'impulse', component: ArticleImpulseComponent },
     { path: 'throw-stapels', component: ArticleThrowStapelsComponent },
     { path: 'make-nervious', component: ArticleMakeNerviousComponent },
-    { path: 'get-rein', component: ArticleGetReinComponent }
+    { path: 'get-rein', component: ArticleGetReinComponent },
+    { path: 'hand-mistakes', component: ArticleHandMistakesComponent}
   ] },
   { path: 'gallery', component: GalleryComponent },
   { path: '', component: DefaultComponent },
@@ -128,6 +130,7 @@ const appRoutes: Routes = [
     ArticleThrowStapelsComponent,
     ArticleMakeNerviousComponent,
     ArticleGetReinComponent,
+    ArticleHandMistakesComponent,
     PastyComponent,
     AllStaffComponent,
     CometComponent,
