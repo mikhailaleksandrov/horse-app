@@ -41,6 +41,7 @@ import { ArticleThrowStapelsComponent } from './articles/articleThrowStapels.com
 import { ArticleMakeNerviousComponent } from './articles/articleMakeNervious.component';
 import { ArticleGetReinComponent } from './articles/articleGetRein.component';
 import { ArticleHandMistakesComponent } from './articles/articleHandMistakes.component';
+import { ArticleWhySingleFingerComponent } from './articles/articleWhySingleFInger.component';
 
 import { ImagesGalleryComponent } from './controls/imagesGallery.component';
 
@@ -61,42 +62,43 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 const appRoutes: Routes = [
-  { path: 'contacts', component: ContactsComponent },
-  { path: 'staff', component: StaffComponent , children: [
-    { path: 'pasty', component: PastyComponent },
-    { path: 'comet', component: CometComponent },
-    { path: 'bandit', component: BanditComponent },
-    { path: 'valensia', component: ValensiaComponent },
-    { path: 'bohema', component: BohemaComponent },
-    { path: '', component: AllStaffComponent },
+  { path: 'contacts', component: ContactsComponent, data: { title: 'Конный Клуб "Сказка" | Контакты' } },
+  { path: 'staff', component: StaffComponent, data: { title: 'Конный Клуб "Сказка" | Лошади' }, children: [
+    { path: 'pasty', component: PastyComponent, data: { title: 'Конный Клуб "Сказка" | Лошади | Каприз' } },
+    { path: 'comet', component: CometComponent, data: { title: 'Конный Клуб "Сказка" | Лошади | Фрося' } },
+    { path: 'bandit', component: BanditComponent, data: { title: 'Конный Клуб "Сказка" | Лошади | Бандит' } },
+    { path: 'valensia', component: ValensiaComponent, data: { title: 'Конный Клуб "Сказка" | Лошади | Ляля' } },
+    { path: 'bohema', component: BohemaComponent, data: { title: 'Конный Клуб "Сказка" | Лошади | Гуля' } },
+    { path: '', component: AllStaffComponent, data: { title: 'Конный Клуб "Сказка" | Лошади' } },
     { path: '**', redirectTo: '' }
   ]},
-  { path: 'services', component: ServicesListComponent },
+  { path: 'services', component: ServicesListComponent, data: { title: 'Конный Клуб "Сказка" | Услуги' } },
   { path: 'articles', component: ArticlesComponent, children: [
     { path: '', redirectTo: 'why', pathMatch: 'full' },
-    { path: 'why', component: ArticleWhyComponent },
-    { path: 'exersizes', component: ArticleExersizesComponent },
-    { path: 'safety', component: ArticleSafetyComponent },
-    { path: 'quotes', component: ArticleQuotesComponent },
-    { path: 'balance', component: ArticleBalanceComponent },
-    { path: 'kushnir-pony', component: ArticleKushnirPonyComponent },
-    { path: 'kushnir-fails', component: ArticleKushnirFailsComponent },
-    { path: 'kushnir-how-to-talk', component: ArticleKushnirHowToTalkComponent },
-    { path: 'kushnir-fears', component: ArticleKushnirFears },
-    { path: 'kushnir-diet', component: ArticleKushnirDiet },
-    { path: 'kushnir-owner', component: ArticleKushnirOwnerComponent },
-    { path: 'kushnir-single-fear', component: ArticleKushnirSingleFearComponent},
-    { path: 'pessoa', component: ArticlePessoaComponent },
-    { path: 'remove-tension', component: ArticleRemoveTensionComponent },
-    { path: 'riding-exersizes', component: ArticleRidingExersizesComponent },
-    { path: 'impulse', component: ArticleImpulseComponent },
-    { path: 'throw-stapels', component: ArticleThrowStapelsComponent },
-    { path: 'make-nervious', component: ArticleMakeNerviousComponent },
-    { path: 'get-rein', component: ArticleGetReinComponent },
-    { path: 'hand-mistakes', component: ArticleHandMistakesComponent}
+    { path: 'why', component: ArticleWhyComponent, data: { title: 'Конный Клуб "Сказка" | Пять причин заняться верховой ездой' } },
+    { path: 'exersizes', component: ArticleExersizesComponent, data: { title: 'Конный Клуб "Сказка" | Упражнения на корде' } },
+    { path: 'safety', component: ArticleSafetyComponent, data: { title: 'Конный Клуб "Сказка" | Техника безопасности' } },
+    { path: 'quotes', component: ArticleQuotesComponent, data: { title: 'Конный Клуб "Сказка" | Говорит тренер' } },
+    { path: 'balance', component: ArticleBalanceComponent, data: { title: 'Конный Клуб "Сказка" | Равновесие для всадника' } },
+    { path: 'kushnir-pony', component: ArticleKushnirPonyComponent, data: { title: 'Конный Клуб "Сказка" | История о двух пони' } },
+    { path: 'kushnir-fails', component: ArticleKushnirFailsComponent, data: { title: 'Конный Клуб "Сказка" | Падения с лошадей' } },
+    { path: 'kushnir-how-to-talk', component: ArticleKushnirHowToTalkComponent, data: { title: 'Конный Клуб "Сказка" | Памятка при общении с лошадью' } },
+    { path: 'kushnir-fears', component: ArticleKushnirFears, data: { title: 'Конный Клуб "Сказка" | Лошадиные страхи' } },
+    { path: 'kushnir-diet', component: ArticleKushnirDiet, data: { title: 'Конный Клуб "Сказка" | Как правильно худеть' } },
+    { path: 'kushnir-owner', component: ArticleKushnirOwnerComponent, data: { title: 'Конный Клуб "Сказка" | Симптомы коневладения' } },
+    { path: 'kushnir-single-fear', component: ArticleKushnirSingleFearComponent, data: { title: 'Конный Клуб "Сказка" | Страхи отдельно взятой лошади' } },
+    { path: 'pessoa', component: ArticlePessoaComponent, data: { title: 'Конный Клуб "Сказка" | Тренинговая система Пессоа' } },
+    { path: 'remove-tension', component: ArticleRemoveTensionComponent, data: { title: 'Конный Клуб "Сказка" | Как убрать сопротивление челюсти' } },
+    { path: 'riding-exersizes', component: ArticleRidingExersizesComponent, data: { title: 'Конный Клуб "Сказка" | Упражнения на разминку' } },
+    { path: 'impulse', component: ArticleImpulseComponent, data: { title: 'Конный Клуб "Сказка" | Развиваем импульс конкурной лошади' } },
+    { path: 'throw-stapels', component: ArticleThrowStapelsComponent, data: { title: 'Конный Клуб "Сказка" | Бросаем стремена' } },
+    { path: 'make-nervious', component: ArticleMakeNerviousComponent, data: { title: 'Конный Клуб "Сказка" | Что делать, если лошадь заставляет вас понервничать' } },
+    { path: 'get-rein', component: ArticleGetReinComponent, data: { title: 'Конный Клуб "Сказка" | Подберите повод! А как?' } },
+    { path: 'hand-mistakes', component: ArticleHandMistakesComponent, data: { title: 'Конный Клуб "Сказка" | Ошибки всадника: руки' } },
+    { path: 'why-single-finger', component: ArticleWhySingleFingerComponent, data: { title: 'Конный Клуб "Сказка" | Пальцы у лошадей' } }
   ] },
-  { path: 'gallery', component: GalleryComponent },
-  { path: '', component: DefaultComponent },
+  { path: 'gallery', component: GalleryComponent, data: { title: 'Конный Клуб "Сказка" | Галерея' } },
+  { path: '', component: DefaultComponent, data: { title: 'Конный Клуб "Сказка"' } },
   { path: '**', redirectTo: '' }
 ];
 
@@ -131,6 +133,7 @@ const appRoutes: Routes = [
     ArticleMakeNerviousComponent,
     ArticleGetReinComponent,
     ArticleHandMistakesComponent,
+    ArticleWhySingleFingerComponent,
     PastyComponent,
     AllStaffComponent,
     CometComponent,

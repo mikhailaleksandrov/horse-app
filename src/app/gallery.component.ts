@@ -10,9 +10,7 @@ export class GalleryComponent {
 
   constructor() {
     this.photosessionImages = [
-      'http://bit.ly/2Fm6mr1',
       'https://scontent-arn2-1.cdninstagram.com/vp/44abf2e234fefcd547842494002b6f85/5B2DA6B2/t51.2885-15/e35/20582555_1579691108742349_8178186209160331264_n.jpg',
-      'http://bit.ly/2FnUS6w',
       'https://scontent-arn2-1.cdninstagram.com/vp/2b3fb4a865636a1920bb74ecd96d5ce6/5B31CD79/t51.2885-15/e35/20759566_258530094651498_7622385800033861632_n.jpg',
       'https://scontent-arn2-1.cdninstagram.com/vp/dc2cf1629b3cb2444367002ba3b30734/5B3ACB23/t51.2885-15/s750x750/sh0.08/e35/21435872_1386739348041828_7262324436613726208_n.jpg'
     ];

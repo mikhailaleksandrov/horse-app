@@ -7,9 +7,16 @@
 </mat-toolbar>
 <div class="row">
     <div class="column2">
-        <app-images-gallery [images]="images"
-                            title="Каприз">
-        </app-images-gallery>
+        <mat-card class="margin10">
+            <mat-card-header>
+                <mat-card-title>
+                    <div class="mat-title">
+                        Каприз
+                    </div>
+                </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="/assets/staff_pasty.jpg">
+        </mat-card>
     </div>
     <div class="column2">
         <mat-card class="margin10">
